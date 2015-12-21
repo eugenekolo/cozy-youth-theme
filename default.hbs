@@ -21,11 +21,14 @@
 </head>
 
 <body class="{{body_class}}">
+  <header></header>
   <div id="content">
 
     <!--NOTE(eugenek): Left side bar follows -->
     <div id="content-left">
-      <div class="vertical">
+    <div class="vertical">
+    <div class="side-bar">
+    
         <div class="blog-title-wrap">
         {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
         <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
@@ -35,8 +38,9 @@
         <h2 class="blog-description">{{@blog.description}}</h2>
         </div>
 
-        <!--TODO(eugenek): Add blog pages here -->
-     </div>
+        {{navigation}}
+    </div>
+    </div>
     </div>
 
     {{! Everything else gets inserted here }}

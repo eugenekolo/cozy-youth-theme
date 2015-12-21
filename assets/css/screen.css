@@ -436,6 +436,12 @@ table.plain {
     text-decoration: underline;
 }
 
+.side-bar {
+    width: 15%;
+    overflow-y: auto;
+    position: fixed;
+}
+
 .user-meta {
     position: relative;
     padding: 0.3rem 40px 0 100px;
