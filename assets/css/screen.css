@@ -64,8 +64,9 @@ body {
     line-height: 1.3em;
     /*color: #3A4145;*/
     color: #aaa;
-    background: #2A2A2A;
-    /*background: #2b303b;*/
+    /*background: #2A2A2A;*/
+    background: #222033;
+    /*background: #545353;*/
 }
 
 ::-moz-selection {
@@ -130,7 +131,7 @@ a {
 }
 
 a:hover {
-    /*text-decoration: underline;*/
+    text-decoration: underline;
 }
 
 h1 a, h2 a, h3 a,
@@ -215,7 +216,7 @@ mark {
 }
 
 code, tt {
-    padding: 1px 3px;
+    padding: 3px 3px;
     font-family: Inconsolata, monospace, sans-serif;
     font-size: 0.85em;
     white-space: pre;
@@ -245,7 +246,7 @@ pre code, tt {
     white-space: pre-wrap;
     background: transparent;
     border: none;
-    padding: 0;
+    padding: 3;
 }
 
 kbd {
@@ -802,9 +803,10 @@ input {
     }
 
 }
+
 /************************ dark gist ****************/
 pre {
-  padding: 20px;
+  padding: 0px;
   color: #ffffff;
   background: #434343; 
 }

@@ -3,12 +3,9 @@
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
 
-{{! The main content area on the homepage }}
+<!--NOTE(eugenek): This is the center content of the website -->
 <div id="content-main">
-
-    {{! Each post will be output using this markup }}
     {{#foreach posts}}
-
     <article class="{{post_class}}">
         <header class="post-header">
             <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
@@ -19,9 +16,7 @@
             <p>{{content}}</p>
         </section>
     </article>
-
     {{/foreach}}
 
     {{pagination}}
-
 </div>
