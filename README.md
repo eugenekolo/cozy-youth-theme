@@ -20,3 +20,6 @@ Demo: https://www.eugenekolo.com
 ![Screen shot of blog 1](http://i.imgur.com/fDwJ6dB.png)
 
 ![Screenshot of blog 2](http://i.imgur.com/ho4MDYe.png)
+
+## License
+MIT License. 
