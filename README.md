@@ -21,5 +21,15 @@ Demo: https://www.eugenekolo.com
 
 ![Screenshot of blog 2](http://i.imgur.com/ho4MDYe.png)
 
+## Installation
+
+```
+cd /path/to/your/ghost/blog/themes 
+git clone https://github.com/eugenekolo/cozy-youth-theme.git
+then select the theme 'cozy-youth' from your Ghost admin panel
+```
+
+or you can download the ZIP of this repo and extract it into your ghost blog themes directory.
+
 ## License
 MIT License. 
