@@ -13,6 +13,7 @@ Features:
 * Syntax highlighting for code
 * Sweet RSS pop-up
 * Some share buttons on post pages
+* Mobile friendly
 
 Demo: https://www.eugenekolo.com
 
