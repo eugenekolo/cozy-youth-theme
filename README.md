@@ -32,5 +32,7 @@ then select the theme 'cozy-youth' from your Ghost admin panel
 
 or you can download the ZIP of this repo and extract it into your ghost blog themes directory.
 
+Note 1: You need to have "Public API" enabled from the Admin panel for some of the features (e.g. latest post listings) to work. 
+
 ## License
 MIT License. 
