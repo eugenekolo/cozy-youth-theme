@@ -15,23 +15,23 @@
     <script type="text/javascript" src="{{asset "css/highlight/highlight.pack.js"}}"></script>
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" href="{{asset "img/favicon.ico"}}">
     
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
 
 <body class="{{body_class}}">
-  <header></header>
   <div id="content">
 
     <!--NOTE(eugenek): Left side bar follows -->
     <div id="content-left">
     <div class="vertical">
     <div class="side-bar">
-    
+
         <div class="blog-title-wrap">
         {{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-        <h1 class="blog-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+        <h1 class="blog-title blog-title-text"><a class="blog-title-link" href="{{@blog.url}}">{{@blog.title}}</a></h1>
         </div>
 
         <div class="blog-description-wrap">
@@ -39,6 +39,13 @@
         </div>
 
         {{navigation}}
+       
+        <div class="latest-10-posts-wrap">
+        <h1 class="latest-10-posts-title">Latest Posts</h1>
+        </div>
+
+        {{> latest_10_posts}}
+
     </div>
     </div>
     </div>
@@ -52,7 +59,7 @@
         <div class="">
              <section class="copyright">All content copyright <a href="/">{{@blog.title}}</a> &copy; 2015 &bull; All rights reserved.</section>
              <section class="poweredby">
-               <a href="https://github.com/eugenekolo/kolotheme">Kolotheme</a> forked from Coder by 
+               <a href="https://github.com/eugenekolo/cozy-youth-theme">Cozy Youth</a> forked from Kolotheme by 
                <a href="http://twitter.com/@eugenekolo">@eugenekolo</a></section>
         </div>
     </footer>

@@ -1,0 +1,9 @@
+<div class="nav-wrapper">
+    <ul class="nav">
+        {{#get "posts" limit="10"}}
+        {{#foreach posts limit="10"}}
+            <li class="nav-latest-post"><a href="{{url absolute="true"}}">{{title}}</a></li>
+        {{/foreach}}
+        {{/get}}
+    </ul>
+</div>

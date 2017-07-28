@@ -62,11 +62,8 @@ body {
     font-weight: 300;
     font-size: 1.6rem;
     line-height: 1.3em;
-    /*color: #3A4145;*/
-    color: #aaa;
-    /*background: #2A2A2A;*/
-    background: #222033;
-    /*background: #545353;*/
+    color: #13120E;
+    background: url(../img/body-background.png) #eae6d1;
 }
 
 ::-moz-selection {
@@ -126,7 +123,8 @@ h6 {
 }
 
 a {
-    color: #4183C4;
+    font-weight: bold; 
+    color: #3399cc;
     text-decoration: none;
 }
 
@@ -222,6 +220,7 @@ code, tt {
     white-space: pre;
     border: 1px solid #444;
     background: #232323;
+    color: #E6E1E1;
     border-radius: 2px;
 }
 
@@ -355,17 +354,31 @@ table.plain {
 }
 
 #content-main {
-  display: inline-block;
-  margin-top: 0px;
-  width: 79%;
+    /* The look of the center */
+    background: #fbfbfb;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #cbcbcb;
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.09),inset 0 0 2px 2px rgba(255,255,255,0.5),inset 0 0 5px 5px rgba(255,255,255,0.4);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.09),inset 0 0 2px 2px rgba(255,255,255,0.5),inset 0 0 5px 5px rgba(255,255,255,0.4);
+    -o-box-shadow: 0 1px 2px rgba(0,0,0,0.09),inset 0 0 2px 2px rgba(255,255,255,0.5),inset 0 0 5px 5px rgba(255,255,255,0.4);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.09),inset 0 0 2px 2px rgba(255,255,255,0.5),inset 0 0 5px 5px rgba(255,255,255,0.4);
+    /* The positioning of the center */
+    display: inline-block;
+    margin: 20px 0;
+    width: 79%;
 }
 
 #blog-logo img {
     display: inline;
     max-height: 2.2rem;
     width: auto;
-    margin-right: 1rem;
-    -webkit-border-radius: 3px;
+    margin-left: 1rem; 
+   -webkit-border-radius: 3px;
     border-radius: 3px;
 }
 
@@ -382,10 +395,33 @@ table.plain {
     margin: 10px 0 10px 0;
     font-size: 3rem;
     letter-spacing: -1px;
-    display: inline;
+    display: inline; 
+    color: #ffffff; 
+    text-shadow: 0 2px 0 #235796;
+}
+
+.blog-title-link {
+    color: #ffffff;
 }
 
 .blog-title-wrap {
+    background: #2B3780;
+}
+
+.latest-10-posts-title {
+    margin: 10px 0 10px 0;
+    margin-left: 1rem;
+    font-size: 2rem;
+    letter-spacing: -1px;
+    display: inline; 
+    color: #ffffff; 
+    text-shadow: 0 2px 0 #235796;
+}
+
+.latest-10-posts-wrap {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #2B3780;
 }
 
 .blog-description {
@@ -407,6 +443,7 @@ table.plain {
     word-break: break-word;
     hyphens: auto;
     margin-left: 50px;
+    margin-right: 50px;
 }
 
 .post-title {
@@ -437,9 +474,20 @@ table.plain {
 }
 
 .side-bar {
+    /* Positioning of the side-bar */
     width: 15%;
     overflow-y: auto;
     position: fixed;
+}
+
+.side-bar ul {
+  list-style-type: none;
+  margin: 0 0 0 0;
+}
+
+.nav-latest-post {
+   margin-top: 2px;
+   margin-bottom:7px;
 }
 
 .user-meta {
@@ -532,7 +580,7 @@ table.plain {
 
 .post-footer .share {
     position: absolute;
-    top: 4rem;
+    top: 1rem;
     right: 0;
     width: 140px;
 }
@@ -541,7 +589,7 @@ table.plain {
     font-size: 1.8rem;
     display: inline-block;
     margin: 1.4rem 1.6rem 1.6rem 0;
-    color: #DDDDDD;
+    color: #000000;
 }
 
 .post-footer .share a:hover {
@@ -566,7 +614,7 @@ table.plain {
 }
 
 .pagination a {
-    color: #999999;
+    color: #000000;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -731,7 +779,6 @@ input {
    1. Media Queries - Smaller than 500px
    ========================================================================== */
 
-
 @media only screen and (max-width: 500px) {
 
     /*#blog-logo img {
@@ -742,6 +789,7 @@ input {
       width: 90%;
       margin: 0 auto;
     }
+
     #content-left {
       width: 100%;
       margin-bottom: 10px;
@@ -803,38 +851,14 @@ input {
         display: block;
     }
 
+    .side-bar {
+        width: 100%;
+        position: relative;
+    }
+
     .site-footer {
         margin-top: 6rem;
         font-size: 1.1rem;
     }
 
 }
-
-/************************ dark gist ****************/
-pre {
-  padding: 0px;
-  color: #ffffff;
-  background: #434343; 
-}
- 
-body .gist .line-data, body .gist .file-data, body .gist .line-numbers {
-  color: #ffffff;
-  background: #1D1B1B; 
-}
-body .gist .gist-meta {
-  color: #ffffff;
-  background: #000000; 
-}
-body .gist .pl-vo, body .gist .pl-v, body .gist .pl-vpf {
-  color: #ffffff; 
-}
-body .gist .pl-en, body .gist .pl-c1, body .gist .pl-s3 {
-  color: #ECAC29; 
-}
-body .gist .pl-k, body .gist .pl-st {
-  color: #7373F2; 
-}
-body .gist .pl-s1, body .gist .pl-pds {
-  color: #76A22F; 
-}
-
