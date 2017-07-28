@@ -1,15 +1,38 @@
-Kolotheme
+cozy-youth-theme
 =======
-A dark ghost blog theme for developers. 
+A light cozy ghost blog theme for developers. 
 
-The follow may or my not be features you desire, but they are what I like about this theme.
+The following may or may not be features you desire, but they are what I like about this theme.
 
 Features:
 * Lists blogs on the front page. No splash screen.
 * Crisp font
-* Interesting background color
+* Side bar showing latest 10 posts
+* Side bar showing pages you make, such as 'about me'
+* Interesting textured background
 * Syntax highlighting for code
 * Sweet RSS pop-up
 * Some share buttons on post pages
+* Mobile friendly
 
 Demo: https://www.eugenekolo.com
+
+## Screenshots
+![Screen shot of blog 1](http://i.imgur.com/fDwJ6dB.png)
+
+![Screenshot of blog 2](http://i.imgur.com/ho4MDYe.png)
+
+## Installation
+
+```
+cd /path/to/your/ghost/blog/themes 
+git clone https://github.com/eugenekolo/cozy-youth-theme.git
+then select the theme 'cozy-youth' from your Ghost admin panel
+```
+
+or you can download the ZIP of this repo and extract it into your ghost blog themes directory.
+
+Note 1: You need to have "Public API" enabled from the Admin panel for some of the features (e.g. latest post listings) to work. 
+
+## License
+MIT License. 
