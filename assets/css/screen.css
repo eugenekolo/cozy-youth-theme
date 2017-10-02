@@ -60,10 +60,11 @@ body {
     max-height: 100%;
     font-family: Roboto,"Helvetica Neue",Helvetica,Arial,freesans,sans-serif;
     font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 1.3em;
+    font-size: 1.65rem;
+    line-height: 1.4em;
     color: #13120E;
     background: url(../img/body-background.png) #eae6d1;
+    overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -370,7 +371,7 @@ table.plain {
     /* The positioning of the center */
     display: inline-block;
     margin: 20px 0;
-    width: 79%;
+    width: 69%;
 }
 
 #blog-logo img {
@@ -779,11 +780,16 @@ input {
    1. Media Queries - Smaller than 500px
    ========================================================================== */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
+  #content-main {
+    width: 79%;
+  }
+}
 
-    /*#blog-logo img {
-        max-height: 80px;
-    }*/
+@media only screen and (max-width: 900px) {
+    #top-banner {
+      display: none;   
+    }
 
     #content {
       width: 90%;
@@ -807,10 +813,9 @@ input {
 
     .post {
         width:auto;
-        margin-left: 0px;
+        margin-left: 16px;
         margin-right: 16px;
         margin-top: 10px;
-        width: 100%;
     }
 
     .post-template .post {
@@ -862,3 +867,5 @@ input {
     }
 
 }
+
+
