@@ -11,7 +11,7 @@
     {{#post}}
     {{! Everything below outputs content of the the post which has been published }}
     <h2 class="post-title"><a href="{{url}}">{{title}}</a></h2>
-    <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM D, YYYY"}}</time> {{#if tags}} | Tags: {{tags}}{{/if}}</span>
+    <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM D, YYYY"}}</time> | {{author}}{{#if tags}} | Tags: {{tags}}{{/if}}</span>
 
     <section class="post-content">
       {{content}}
@@ -34,6 +34,9 @@
             <span class="hidden">Google+</span>
         </a>
       </section>
+
+      <script data-isso="https://ssl.eugenekolo.com" src="https://ssl.eugenekolo.com/js/embed.min.js"></script>
+      <section id="isso-thread"></section>                      
     </footer>
 
     {{/post}}
