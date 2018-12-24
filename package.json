@@ -1,4 +1,7 @@
 {
   "name": "cozy-youth",
-  "version": "0.0.1"
+  "version": "1.0.0",
+  "author": {
+    "email": "eugene@eugenekolo.com"
+  }
 }
