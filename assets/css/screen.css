@@ -430,6 +430,7 @@ table.plain {
     font-size: 1.4rem;
     line-height: 1.5em;
     letter-spacing: 0;
+    padding-left: 2px;
 }
 
 .blog-description-wrap {
